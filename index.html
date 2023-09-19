@@ -1,0 +1,2251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Tech Serve</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&display=swap');
+        /* ... Your existing CSS ... */
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&display=swap');
+        /* Media Queries */
+        .end{
+        display: none;
+    }
+     .brki{
+        display: none;
+     }
+     .brku{
+        display: none;
+     }
+     .brkuni{
+        display: none;
+     }
+     .brkun{
+        display: none;
+     }
+     .brku{
+        display: none;
+     }
+        
+        @media (max-width: 768px) {
+            .button{
+                font-size: 15px;
+                width: 180px;
+            }
+      
+            .content p{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .logo img{
+                width: 300px;
+                
+            }
+            
+            .content h1{
+                font-size: 43px;
+                font-family: 'Poppins', sans-serif;
+                
+            }
+            
+            .close-link{
+                display: block;
+            }
+            .close-link img{
+                width: 20px;
+               
+            }
+            .nav-links {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                background-color: black;
+                position: absolute;
+                top: 0;
+                left: -250px; /* Hide the navbar off-screen initially */
+                width: 230px;
+                height: 100%;
+                transition: left 0.3s ease;
+                z-index: 2;
+            }
+           
+            .banner {
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 20px;
+            }
+            .hamburger-menu {
+                display: block;
+                font-size: 28px;
+                cursor: pointer;
+                margin-right: .75rem;
+                color: #fff;
+                display: block;
+                padding-top: 10px;
+            }
+            .br{
+                display: block;
+            }
+            .close-link {
+                color: #fff;
+                text-decoration: none;
+                font-size: 20px;
+                margin: 10px;
+                text-align: right;
+                display: none; /* Hide the Close link initially */
+            }
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0px 0;
+                width: 100%;
+                border: none;
+            }
+            nav ul li {
+                margin: 20px;
+                border: none;
+            }
+            .content {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            .show {
+                left: 0; /* Show the navbar when class "show" is added */
+            }
+            .show .hamburger-menu {
+                display: none; /* Hide the hamburger icon when the navbar is shown */
+            }
+            .show .close-link {
+                display: block; /* Show the Close link when the navbar is shown */
+            }
+            .sign-up{
+                  border: 2px solid red;
+
+            }
+        }
+        @media  (max-width: 1240px){
+
+
+.content h1{
+    padding-top: 100px;
+}
+
+        }
+
+        @media  (max-width: 1003px){
+
+            .content h1{
+                padding-top: 50px;
+            }
+            .nav-ul{
+                padding-top: 15px;
+            }
+
+            .logo img{
+                width: 190px;
+            }
+
+span{
+    color: yellow;
+}
+
+.nav-links{
+    margin: auto 0;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: auto .5rem;
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+
+.sign-up{
+    
+    margin-left: 2rem;
+    border: 2px solid #fff;
+    padding: 3px 10px;
+    border-radius: 25px;
+    text-transform: capitalize;
+    transition: 0.6s ease;
+}
+
+            /* ... Other styles ... */
+        }
+        @media  (max-width: 368px){
+
+        
+           
+            /* ... Other styles ... */
+        }
+        @media  (max-width: 299px){
+
+           
+            .hamburger-menu {
+                display: block;
+                font-size: 20px;
+                cursor: pointer;
+                margin-right: 1rem;
+                color: #fff;
+            }
+            /* ... Other styles ... */
+        }
+        @media  (max-width: 381px){
+
+
+            .hamburger-menu {
+                display: block;
+                font-size: 28px;
+                padding-top: 10px;
+                cursor: pointer;
+                margin-right: .75rem;
+                color: #fff;
+                display: block;
+            }
+            
+        }
+        @media  (max-width: 381px){
+
+
+            .hamburger-menu {
+                display: block;
+                font-size: 24px;
+                padding-top: 10px;
+                cursor: pointer;
+                margin-right: 1rem;
+                color: #fff;
+                display: block;
+            }
+            .logo img{
+                width: 160px;
+            }
+            
+        }
+        @media  (max-width: 245px){
+
+            
+            .hamburger-menu {
+                display: block;
+                font-size: 20px;
+                padding-top:8px;
+                cursor: pointer;
+                margin-right: .5rem;
+                color: #fff;
+                display: block;
+            }
+            .logo{
+                padding: 0px 0px;
+                top: 0;
+                left: 0;
+            }
+            .logo img{
+                width: 140px;
+            }
+
+            
+        }
+        @media (max-width:250px) {
+            .button{
+    width: 100px;
+    
+    padding: rem rem;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 #009688;
+    transition: 0.5s ease-out;
+    color: #fff;
+}
+        }
+        @media  (max-width: 245px){
+
+
+            .hamburger-menu {
+                display: block;
+                font-size: 20px;
+                padding-top:8px;
+                cursor: pointer;
+                margin-right: 0rem;
+                color: #fff;
+                display: block;
+            }
+            .logo{
+              padding-top: 0;
+              padding-left: 0;
+            }
+            .logo img{
+                width: 140px;
+            }
+            
+        }
+        
+        @media  (max-width: 613px){
+
+            .content p{
+    margin: 0.5rem;
+    color: rgba(255,255,255,0.8);
+   
+}
+                       
+
+
+        }
+        @media  (max-width: 520px){
+
+            .content h1{
+   padding-top: 70px;
+   
+}
+                       
+
+
+        }
+        @media  (max-width: 543px){
+
+            .content h1{
+   padding-top: 100px;
+   
+}
+.content p{
+    padding-left: 17px;
+    padding-right: 17px;
+}
+                       
+
+
+
+        }
+        @media  (max-width: 445px){
+
+            .content h1{
+   padding-top: 50px;
+   font-size: 30px;
+   
+}
+.content p{
+    padding-left: 17px;
+    padding-right: 17px;
+}
+                       
+
+}
+        @media  (max-width: 281px){
+
+            .content h1{
+   padding-top: 50px;
+   font-size: 30px;
+   
+}
+.content p{
+    padding-left: 17px;
+    padding-right: 17px;
+}
+                       
+
+}
+        @media  (max-width: 348px){
+
+  
+.content p{
+    padding-left: 23px;
+    padding-right: 23px;
+}
+.content h1{
+    font-size: 25px;
+}
+.button{
+    width: 180px;
+    margin: .5rem .5rem;
+    
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 #009688;
+    transition: 0.5s ease-out;
+    color: #fff;
+}
+                       
+
+}
+        @media  (max-width: 283px){
+
+  
+.content p{
+    padding-left: 23px;
+    padding-right: 23px;
+    font-size: 12px;
+}
+.content h1{
+    font-size: 20px;
+
+}
+.button{
+    width: 130px;
+    margin: .5rem .5rem;
+    padding: rem rem;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 #009688;
+    transition: 0.5s ease-out;
+    color: #fff;
+}
+                       
+
+}
+
+
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    padding: 20px;
+    grid-gap: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.card{
+    background-color: #1c1b29;
+    border-radius: 20px;
+    background-size: 200px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+.contain{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}
+
+.contain:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+
+.details{
+    padding: 20px 10px;
+}
+.details>h3{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+.details>p{
+    color: #a0a0a0;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+.card-group{
+padding-left: 120px;
+padding-right: 120px;
+
+}
+
+@media (max-width:1196px) {
+    .card-group{
+padding-left: 100px;
+padding-right: 100px;
+}
+}
+@media (max-width:1053px) {
+    .card-group{
+padding-left: 80px;
+padding-right: 80px;
+}
+}
+@media (max-width:983px) {
+    .card-group{
+padding-left: 50px;
+padding-right: 50px;
+}
+}
+@media (max-width:983px) {
+    .card-group{
+padding-left: 50px;
+padding-right: 50px;
+}
+}
+@media (max-width:983px) {
+    .card-group{
+padding-left: 20px;
+padding-right: 20px;
+}
+
+}
+@media (max-width:240px) {
+    .card-group{
+padding-left: 7px;
+padding-right: 7px;
+}
+}
+@media (max-width:210px) {
+    .card-group{
+padding-left: 0px;
+padding-right: 0px;
+}
+}
+ .card-title{
+    font-size: 30px; font-weight: bold;
+}
+.card-text{
+    color: rgb(209, 209, 209);
+     font-size: 16px;
+}
+
+.btni{
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+}
+.btt{
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 15px;
+padding-right: 15px;
+border: none;
+font-weight: bold;
+}
+
+@media (max-width:300px) {
+    .card-title{
+    font-size: 22px;
+}
+.card-text{
+    font-size: 12px;
+}
+}
+@media (max-width:212px) {
+    .card-title{
+    font-size: 20px; font-weight: bold;
+}
+.card-text{
+    color: rgb(209, 209, 209);
+     font-size: 13px;
+}
+}
+
+
+/* jfhje dasafsafafsa*/
+.wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.para{
+    font-family: 'Poppins', sans-serif;
+}
+.background-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex; 
+}
+
+.about-container{
+    width: 100%;
+    min-height: 80vh;
+    position: absolute;
+    
+   
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px 40px; */
+    border-radius: 5px;
+}
+.image-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img {
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.text-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+.text-container h1{
+    font-size: 70px;
+    padding: 0px 0px;
+    padding-bottom: 5px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.text-container a{
+    text-decoration: none;
+    padding: 12px;
+    margin: 50px 0px;
+    background-color: rebeccapurple;
+    border: 2px solid transparent;
+    color: white;
+    border-radius: 5px;
+    transition: .3s all ease;
+}
+.text-container a:hover{
+    background-color: transparent;
+    color: black;
+    border: 2px solid rebeccapurple;
+}
+@media screen and (max-width: 1600px){
+    .about-container{
+        width: 90%;
+    }
+    .image-container img{
+        width: 400px;
+        height: 400px;
+    }
+    .text-container h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .about-container{
+        flex-direction: column;
+    }
+    .image-container img{
+        width: 300px;
+        height: 300px;
+    }
+    .text-container {
+        align-items: center;
+    }
+    .wrapper{
+        padding-top: 300px;
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width:1240px) {
+    .wrapper{
+        padding-top: 100px;
+    }
+}
+@media (max-width:552px) {
+    .wrapper{
+        padding-top: 200px;
+    }
+}
+@media (max-width:452px) {
+    .wrapper{
+        padding-top: 200px;
+    }
+    .text-container h1{
+        font-size: 35px;
+    }
+}
+@media (max-width:347px) {
+    .wrapper{
+        padding-top: 150px;
+    }
+    .text-container h1{
+        font-size: 35px;
+    }
+    .image-container img{
+        width: 200px;
+        height: 200px;
+    }
+    .text-container h1{
+        font-size: 30px;
+    }
+    .para{
+        font-size: 15px;
+       
+    }
+}
+@media (max-width:242px) {
+    .wrapper{
+        padding-top: 200px;
+    }
+    .text-container h1{
+        font-size: 35px;
+    }
+    .image-container img{
+        width: 160px;
+        height: 150px;
+    }
+    .text-container h1{
+        font-size: 25px;
+    }
+    .about-container{
+    width: 100%;
+    min-height: 80vh;
+    position: absolute;
+   
+    
+    display: flex;
+
+    border-radius: 5px;
+}
+.text-container{
+    flex: 1;
+    display: flex;
+    /* justify-content: center; */
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 22px;
+    left: 0;
+    right: 0;
+}
+}
+
+@media  (max-width:550px) {
+ 
+    .wrapper{
+        padding-bottom: 150px;
+        
+    }
+
+}
+
+.hood{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+@media (max-width:354px) {
+    .para{
+        padding-left: 10px;
+        padding-right: 5px;
+    }
+}
+@media (max-width:266px) {
+    .para{
+        padding-left: 10px;
+        padding-right: 5px;
+    }
+    .text-container h1{
+        font-size: 25px;
+        padding-left: 5px;
+    }
+    .s{
+        padding-left: 5px;
+        font-size: 14px;
+    }
+    .about-container{
+    width: 100%;
+    min-height: 80vh;
+    position: absolute;
+   
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px 40px; */
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+
+}
+
+@media (max-width:396px) {
+    
+  .wrapper{
+    padding-bottom: 200px;
+  }
+
+}
+
+@media (max-width:300px) {
+    
+    .hood{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 30px;
+    }
+}
+
+
+
+.dd{
+    text-align: center;
+
+}
+
+.counter {
+      display: flex;
+      justify-content: space-around;
+      font-size: 24px;
+      font-weight: bold;
+      max-width: 600px;
+      color: white; /* Add a maximum width to limit the counter's width on larger screens */
+       
+    }
+
+    .counter-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+      color: white;
+    }
+
+    .lo img {
+      width: 220px; /* Adjust the width and height according to your logo size */
+      height: 110px;
+      margin-bottom: 10px;
+    }
+    .l img {
+      width: 100px; /* Adjust the width and height according to your logo size */
+      height: 100px;
+      margin-bottom: 10px;
+    }
+    .loo img {
+      width: 150px; /* Adjust the width and height according to your logo size */
+      height: 110px;
+      margin-bottom: 10px;
+      
+    }
+
+  
+
+
+
+
+    .counter-text {
+      font-size: 16px;
+      color: white;
+    }
+    .pura{
+padding-left: 300px;
+    }
+
+    @media (max-width: 620px) { /* Adjust the breakpoint as needed */
+      .counter {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width:1190px) {
+        .pura{
+           padding-left: 250px;
+    }
+
+    }
+    @media (max-width:1070px) {
+        .pura{
+           padding-left: 210px;
+    }
+
+    }
+    @media (max-width:1000px) {
+        .pura{
+           padding-left: 170px;
+    }
+
+    }
+    @media (max-width:923px) {
+        .pura{
+           padding-left: 120px;
+    }
+
+    }
+    @media (max-width:838px) {
+        .pura{
+           padding-left: 80px;
+    }
+
+    }
+    @media (max-width:711px) {
+        .pura{
+           padding-left: 40px;
+    }
+
+    }
+    @media (max-width:640px) {
+        .pura{
+           padding-left: 20px;
+    }
+
+    }
+    @media (max-width:240px) {
+        .pura{
+           padding-left: 0px;
+          
+    }
+
+
+    .lo img {
+      width: 140px; /* Adjust the width and height according to your logo size */
+      height: 70px;
+      margin-bottom: 10px;
+    }
+    .l img {
+      width: 70px; /* Adjust the width and height according to your logo size */
+      height: 70px;
+      margin-bottom: 10px;
+    }
+    .loo img {
+      width: 90px; /* Adjust the width and height according to your logo size */
+      height: 70px;
+      margin-bottom: 10px;
+      
+    }
+    .counter-text{
+        font-size: 15px;
+    }
+
+
+ 
+   
+
+    }
+    .btnnn{
+        background-color: #000000;
+        border: none;
+        color: white;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 25px;
+    }
+    .btnnna{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .btnnn:hover{
+           background-color: rgb(59, 53, 53);
+           
+    }
+    .ln{
+        line-height: 2;
+        font-size: larger;
+        text-decoration: none;
+        color: black;
+        
+    }
+
+    .svga{
+        width: 35px;
+        height: 35px;
+    }
+    .break{
+        display: none;
+    }
+    .breaki{
+        display: none;
+    }
+    .breakii{
+        display: none;
+    }
+    .breakiii{
+        display: none;
+    }
+    .breakiiii{
+        display: none;
+    }
+    
+    .breakiiiii{
+        display: none;
+    }
+    .breakiiiiii{
+        display: none;
+    }
+
+    @media (max-width:240px) {
+        
+        .content p{
+           font-size: 11px;
+        }
+        .button{
+            font-size: 12px;
+            width: 120px;
+        }
+    }
+    .mn{
+        display: flex;
+    }
+
+.iframe{
+
+width: 40rem;
+height: 40vh;
+padding-left: 80px;
+
+}
+.right{
+    padding-left: 60px;
+}
+
+
+@media (max-width:1102px) {
+    .ln{
+        line-height: 2;
+        font-size: larger;
+        text-decoration: none;
+        color: black;
+    }
+    .iframe{
+
+width: 32rem;
+height: 45vh;
+padding-left: 80px;
+
+}
+ 
+}
+@media (max-width:917px) {
+    .ln{
+        line-height: 2;
+        font-size: large;
+        text-decoration: none;
+        color: black;
+    }
+    .iframe{
+
+width: 29rem;
+height: 40vh;
+padding-left: 80px;
+
+}
+ 
+}
+@media (max-width:960px) {
+    .break{
+        display: block;
+    }
+}
+@media (max-width:900px) {
+    .ln{
+        line-height: 2;
+        font-size: large;
+        text-decoration: none;
+        color: black;
+        padding-right: 20px;
+    }
+    .break{
+        display: block;
+    }
+    .iframe{
+
+width: 29rem;
+height: 50vh;
+padding-left: 80px;
+
+}
+ 
+}
+@media (max-width:858px) {
+    .ln{
+        line-height: 2;
+        font-size: small;
+        text-decoration: none;
+        color: black;
+        padding-right: 20px;
+    }
+    .break{
+        display: block;
+    }
+    .right{
+        font-size: medium;
+    }
+    .iframe{
+
+width: 29rem;
+height: 60vh;
+padding-left: 80px;
+
+}
+ 
+}
+@media (max-width:858px) {
+    .ln{
+        
+        line-height: 2;
+        font-size: small;
+        text-decoration: none;
+        color: black;
+        padding-right: 20px;
+    }
+    .break{
+        display: block;
+    }
+    .right{
+        font-size: medium;
+        padding-top: 20px;
+        padding-left: 80px;
+    }
+    .iframe{
+
+width: 40rem;
+height: 60vh;
+padding-left: 80px;
+
+}
+.mn{
+    flex-direction: column;
+    padding-top: 60px;
+}
+ 
+}
+@media (max-width:827px) {
+    .ln{
+        
+        line-height: 2;
+        font-size: small;
+        text-decoration: none;
+        color: black;
+        padding-right: 20px;
+    }
+    .break{
+        display: block;
+    }
+    .breaki{
+        display: block;
+    }
+    .right{
+        font-size: medium;
+        padding-top: 20px;
+        padding-left: 80px;
+    }
+    .iframe{
+
+width: 40rem;
+height: 60vh;
+padding-left: 80px;
+
+}
+
+.mn{
+    flex-direction: column;
+    
+}
+ 
+}
+@media (max-width:827px) {
+    .ln{
+        
+        line-height: 2;
+        font-size: small;
+        text-decoration: none;
+        color: black;
+        padding-right: 20px;
+    }
+    .break{
+        display: block;
+    }
+    .breaki{
+        display: block;
+    }
+    .right{
+        font-size: medium;
+        padding-top: 20px;
+        padding-left: 80px;
+    }
+    .iframe{
+
+width: 30rem;
+height: 60vh;
+padding-left: 50px;
+
+}
+
+.mn{
+    flex-direction: column;
+    
+}
+ 
+}
+@media (max-width:690px) {
+    
+.breakiii{
+    display: block;
+}
+.breakiiii{
+    display: block;
+}
+
+}
+@media (max-width:601px) {
+    .ln{
+        
+        line-height: 2;
+        font-size: small;
+        text-decoration: none;
+        color: black;
+        padding-right: 20px;
+    }
+    .break{
+        display: block;
+    }
+    .breakii{
+        display: block;
+    }
+    .breaki{
+        display: block;
+    }
+    .right{
+        font-size: medium;
+        padding-top: 20px;
+        padding-left: 80px;
+    }
+    .iframe{
+
+width: 30rem;
+height: 60vh;
+padding-left: 50px;
+
+}
+
+.mn{
+    flex-direction: column;
+    
+}
+ 
+}
+@media (max-width:601px) {
+    .ln{
+        
+        line-height: 2;
+        font-size: small;
+        text-decoration: none;
+        color: black;
+        padding-right: 20px;
+    }
+    .break{
+        display: block;
+    }
+    .breakii{
+        display: block;
+    }
+    .breaki{
+        display: block;
+    }
+    .breakiii{
+        display: block;
+    }
+    .right{
+        font-size: medium;
+        padding-top: 20px;
+        padding-left: 80px;
+    }
+    .iframe{
+
+width: 25rem;
+height: 65vh;
+padding-left: 50px;
+
+}
+
+.mn{
+    flex-direction: column;
+    
+}
+ 
+}
+@media (max-width:447px) {
+    .ln{
+        
+        line-height: 2;
+        font-size: small;
+        text-decoration: none;
+        color: black;
+        padding-right: 20px;
+    }
+    .break{
+        display: block;
+    }
+    .breakii{
+        display: block;
+    }
+    .breaki{
+        display: block;
+    }
+    .breakiii{
+        display: block;
+    }
+    .right{
+        font-size: medium;
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+    .iframe{
+
+width: 25rem;
+height: 65vh;
+padding-left: 10px;
+
+}
+
+.mn{
+    flex-direction: column;
+    
+}
+.kod{
+    font-size: 30px;
+}
+ 
+}
+@media (max-width:401px) {
+    .ln{
+        
+        line-height: 2;
+        font-size: small;
+        text-decoration: none;
+        color: black;
+        padding-right: 20px;
+    }
+    .break{
+        display: block;
+    }
+    .breakii{
+        display: block;
+    }
+    .breaki{
+        display: block;
+    }
+    .breakiii{
+        display: block;
+    }
+    .right{
+        font-size: medium;
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+    .iframe{
+
+width: 20rem;
+height: 58vh;
+padding-left: 10px;
+padding-right: 10px;
+
+}
+
+.mn{
+    flex-direction: column;
+    
+}
+.kod{
+    font-size: 25px;
+}
+ 
+}
+@media (max-width:386px) {
+    .break{
+        display: block;
+    }
+    .breakii{
+        display: block;
+    }
+    .breaki{
+        display: block;
+    }
+    .breakiii{
+        display: block;
+    }
+    .breakiiii{
+        display: block;
+    }
+    .breakiiiii{
+        display: block;
+    }
+    .breakiiiiii{
+        display: block;
+    }
+}
+
+@media (max-width:346px) {
+    .break{
+        display: block;
+    }
+    .breakii{
+        display: block;
+    }
+    .breaki{
+        display: block;
+    }
+    .breakiii{
+        display: none;
+    }
+    .breakiiii{
+        display: none;
+    }
+    .breakiiiii{
+        display: none;
+    }
+    .breakiiiiii{
+        display: none;
+    }
+}
+
+
+
+@media (max-width:328px) {
+    .ln{
+        
+        line-height: 2;
+        font-size: x-small;
+        text-decoration: none;
+        color: black;
+        padding-right: 20px;
+    }
+    .break{
+        display: block;
+    }
+    .breakii{
+        display: none;
+    }
+    .breaki{
+        display: none;
+    }
+    .breakiii{
+        display: none;
+    }
+    .right{
+        font-size: small;
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+    .iframe{
+
+width: 15rem;
+height: 52vh;
+padding-left: 10px;
+padding-right: 10px;
+
+}
+
+.mn{
+    flex-direction: column;
+    
+}
+.kod{
+    font-size: 20px;
+}
+ 
+}
+@media (max-width:300px) {
+    .ln{
+        
+        line-height: 2;
+        font-size: x-small;
+        text-decoration: none;
+        color: black;
+        padding-right: 20px;
+    }
+    .break{
+        display: block;
+    }
+    .breakii{
+        display: none;
+    }
+    .breaki{
+        display: none;
+    }
+    .breakiii{
+        display: none;
+    }
+    .right{
+        font-size: small;
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+    .iframe{
+
+width: 15rem;
+height: 48vh;
+padding-left: 10px;
+padding-right: 10px;
+
+}
+
+.mn{
+    flex-direction: column;
+    
+}
+.kod{
+    font-size: 17px;
+}
+ 
+}
+@media (max-width:300px) {
+    .ln{
+        
+        line-height: 2;
+        font-size: x-small;
+        text-decoration: none;
+        color: black;
+        padding-right: 20px;
+    }
+    .break{
+        display: block;
+    }
+    .breakii{
+        display: block;
+    }
+    .breaki{
+        display: none;
+    }
+    .breakiii{
+        display: none;
+    }
+    .right{
+        font-size: small;
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+    .iframe{
+
+width: 15rem;
+height: 48vh;
+padding-left: 10px;
+padding-right: 10px;
+
+}
+
+.mn{
+    flex-direction: column;
+                            
+}
+.kod{
+    font-size: 20px;
+}
+ 
+}
+
+
+@media (max-width:250px) {
+    .ln{
+        
+        line-height: 2;
+        font-size: small;
+        text-decoration: none;
+        color: black;
+        padding-right: 40px;
+    }
+    .break{
+        display: block;
+    }
+    .breakii{
+        display: none;
+    }
+    .breaki{
+        display: none;
+    }
+    .breakiii{
+        display: none;
+    }
+    .right{
+        font-size: x-small;
+        padding-top: 20px;
+        padding-left: 10px;
+        
+    }
+    .iframe{
+
+width: 12rem;
+height: 42vh;
+padding-left: 10px;
+padding-right: 10px;
+
+
+}
+
+.mn{
+    flex-direction: column;
+    
+}
+.kod{
+    font-size: 17px;
+}
+
+.svga{
+    width: 22px;
+    height: 22px;
+}
+ 
+.btnnna{
+    font-size: 16px;
+}
+.btnnn{
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+}
+
+
+.tr{
+     padding-left: 50px;
+  }
+  @media (max-width:496px) {
+    .tr{
+        padding-left: 10px;
+    }
+  }
+ 
+  @media (max-width:355px) {
+    .tr{
+        padding-left: 0px;
+    }
+  }
+  @media (max-width:253px) {
+    .tr{
+        padding-left: 0px;
+    }
+  }
+
+  @media (max-width:270px) {
+    .brki{
+        display: block;
+    }
+  }
+  @media (max-width:248px) {
+    .brku{
+        display: block;
+    }
+  }
+ 
+
+
+
+
+  .section{
+  background: url("images/bg-1.jpg") no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.wrappre .title{
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.wrappre p{
+  text-align: justify;
+  padding-bottom: 20px;
+}
+.counter-up{
+  background: url("images/bg-2.jpeg") no-repeat;
+  min-height: 70vh;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0 130px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.counter-up::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+}
+.counter-up .content{
+  z-index: 1;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.counter-up .content .box{
+  border: 1px dashed rgba(0, 0, 0, 0.6);
+  width: calc(25% - 30px);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 20px;
+}
+.content .box .icon{
+  font-size: 48px;
+  color: black;
+}
+.content .box .counter{
+  font-size: 50px;
+  font-weight: 500;
+  color: black;
+  font-family: sans-serif;
+}
+.content .box .text{
+  font-weight: 400;
+  color: black;
+}
+@media screen and (max-width: 1036px) {
+  .counter-up{
+    padding: 50px 50px 0 50px;
+  }
+  .counter-up .content .box{
+    width: calc(50% - 30px);
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .counter-up .content .box{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .wrappre{
+    padding: 20px;
+  }
+  .counter-up{
+    padding: 30px 20px 0 20px;
+  }
+}
+
+.nine{
+    padding-left: 100px;
+}
+
+@media (max-width:917px) {
+    .nine{
+    padding-left: 60px;
+    padding-bottom: 40px;
+}
+}
+@media (max-width:500px) {
+    .nine{
+    padding-left: 40px;
+    padding-bottom: 80px;
+    }
+    .brki{
+        display: block;
+    }
+}
+
+   
+@media (max-width:500px) {
+    .nine{
+    padding-left: 40px;
+    padding-bottom: 80px;
+    }
+    .brki{
+        display: block;
+    }
+    .brku{
+        display: block;
+    }
+}
+@media (max-width:388px) {
+    .nine{
+    padding-left: 40px;
+    padding-bottom: 80px;
+    }
+    .brki{
+        display: block;
+    }
+    .brku{
+        display: block;
+    }
+    .breaki{
+        display: block;
+    }
+    .breakii{
+        display: block;
+    }
+    .brkun{
+        display: block;
+    }
+}
+@media (max-width:354px) {
+    .nine{
+    padding-left: 20px;
+    padding-right: 0;
+    padding-bottom: 80px;
+    }
+    .brki{
+        display: block;
+    }
+    .brku{
+        display: block;
+    }
+    .breaki{
+        display: block;
+    }
+    .breakii{
+        display: block;
+    }
+    .brkun{
+        display: block;
+    }
+    .brkuni{
+        display: block;
+    }
+}
+@media (max-width:346px) {
+    .nine{
+    padding-left: 20px;
+    padding-right: 0;
+    padding-bottom: 80px;
+    }
+    .brki{
+        display: none;
+    }
+    .brku{
+        display: none;
+    }
+    .breaki{
+        display: none;
+    }
+    .breakii{
+        display: none;
+    }
+    .brkun{
+        display: none;
+    }
+    .brkuni{
+        display: block;
+    }
+}
+
+
+@media (max-width:290px) {
+    .nine{
+    padding-left: 8px;
+    padding-right: 0;
+    padding-bottom: 80px;
+    }
+    .brki{
+        display: none;
+    }
+    .brku{
+        display: none;
+    }
+    .breaki{
+        display: block;
+    }
+    .breakii{
+        display: none;
+    }
+    .brkun{
+        display: none;
+    }
+    .brkuni{
+        display: block;
+        
+    }
+}
+
+
+@media (max-width:390px) {
+    .end{
+        display: block;
+    }
+}
+
+   
+
+   
+
+
+
+    </style>
+</head>
+<body>
+    <!-- header section start  -->
+    <header>
+        <div class="hero">
+            <div class="banner">
+              
+                <div class="logo"><img src="./images/real logo.png" class="logoImg"></div>
+                <div class="hamburger-menu">&#9776;</div> <!-- Add a hamburger icon -->
+                <div class="nav-links">
+                    <nav>
+                        <ul class="nav-ul">
+                            <a href="#" class="close-link"><img src="./images/cross.png"></a>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="#abouti">About</a></li>
+                            <li><a href="#ss">Services</a></li>
+                            <li><a href="./our team.html">Our team</a></li>
+                            <br class="br">
+                            <li><a href="./contact.php" class="sign-up">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                     
+                </div>
+            </div>
+
+       
+        <div class="content">
+                
+            <h1>Tech Experts</h1>
+                <p>Welcome to Tech Serve - Your Trusted Tech Experts! As industry-leading IT specialists, we take pride in serving you with unparalleled technological solutions. </p>
+                <br>
+                <button class="button"><a href="#ss" style="text-decoration: none; color: white;">Get Started</a></button>
+                
+                
+            </div>
+        </div>
+    </header>
+    <script>
+        // JavaScript to handle the mobile navigation menu
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+        const closeLink = document.querySelector('.close-link');
+
+        hamburgerMenu.addEventListener('click', () => {
+            navLinks.classList.add('show');
+        });
+
+        closeLink.addEventListener('click', () => {
+            navLinks.classList.remove('show');
+        });
+    </script>
+     <!-- END of headere **************************************************-->
+     
+     <br><br>
+     <div class="wrapper">
+
+        <div class="background-container">
+            <div class="bg-1"></div>
+            <div class="bg-2"></div>
+    
+        </div>
+        <div class="about-container">
+            
+          
+
+            <div class="text-container">
+                <span style="color: #064d7d; font-size: 17px;font-family: 'Poppins', sans-serif" class="s">Your IT solution</span>
+                <h1 style="color: black;">Why Choose Us</h1>
+                 <p style="color: rgb(0, 0, 0); " class="para" >At Tech Serve, we have a team of highly skilled IT professionals with years of experience and in-depth knowledge in providing top-notch IT services. Our expertise allows us to deliver reliable and innovative solutions tailored to your unique business needs.We stay up-to-date with the latest technological advancements.</p> 
+                
+             </div>
+            <div class="image-container">
+                <img src="./images/card6.jpg" alt="">
+                
+            </div>
+        </div>
+    </div>  
+
+<!-- ********CARDS Starts From here*****
+************************************** -->
+
+
+<!-- Card row 1 -->
+ <br><br>
+
+<h1 class="hood" id="ss"><p style="color: #064d7d; font-size: 17px;  font-family: 'Poppins', sans-serif;" class="dd">What we Offers</p><p style="color: black;">Our Services</p></h1>
+<div class="card-group" style="padding-bottom: 0;">
+    <div class="card" style="border-radius: 10px;">
+        <div class="contain">
+      <img src="./images/card 1.jpg" class="card-img-top" alt="...">
+    </div>
+      <div class="card-body">
+        <h5 class="card-title text-light" >IT Experts</h5>
+        <p class="card-text text-gray" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error fuga ab eveniet ex veritatis illum? Lorem ipsum dolor sit.</p>
+       <div> <a href="contact.php" class="sign-up" style="text-decoration: none; border: none; background-color: white;"><span style="color: black; padding-left: 0; font-weight: bold;  text-decoration: none;">Hire Now</span></a></div>
+     
+    </div>
+    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="card">
+        <div class="contain">
+      <img src="./images/card 2.jpg" class="card-img-top" alt="...">
+    </div>
+      <div class="card-body">
+        <h5 class="card-title text-light">Technical Service</h5>
+        <p class="card-text text-gray" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel earum, repudiandae enim labore sapiente sit officia commodi assumenda?.</p>
+        <a href="contact.php" class="sign-up" style="text-decoration: none; border: none; background-color: white;"><span style="color: black; padding-left: 0; font-weight: bold;  text-decoration: none;">Hire Now</span></a>
+      </div>
+    </div>
+    </div>
+  </div>
+  
+
+  <br><br>
+<div class="card-group">
+    <div class="card" style="border-radius: 10px;">
+        <div class="contain">
+      <img src="./images/card4.jpg" class="card-img-top" alt="...">
+    </div>
+      <div class="card-body">
+        <h5 class="card-title text-light" >Software Installation</h5>
+        <p class="card-text text-gray" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate doloribus quae dicta fuga minima deleniti animi totam similique.</p>
+       <div> <a href="contact.php" class="sign-up" style="text-decoration: none; border: none; background-color: white;"><span style="color: black; padding-left: 0; font-weight: bold;  text-decoration: none;">Hire Now</span></a></div>
+     
+    </div>
+    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="card">
+        <div class="contain">
+      <img src="./images/card 5.jpg" class="card-img-top" alt="...">
+    </div>
+      <div class="card-body">
+        <h5 class="card-title text-light">Hardware Installation</h5>
+        <p class="card-text text-gray" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium voluptate rerum, aliquam dolorem minima reiciendis molestias iure esse?</p>
+        <a href="contact.php" class="sign-up" style="text-decoration: none; border: none; background-color: white;"><span style="color: black; padding-left: 0; font-weight: bold;  text-decoration: none;">Hire Now</span></a>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  
+  
+  <br><br>
+<div class="card-group">
+    <div class="card" style="border-radius: 10px;">
+        <div class="contain">
+      <img src="./images/card6.jpg" class="card-img-top" alt="...">
+    </div>
+      <div class="card-body">
+        <h5 class="card-title text-light" >Network Installation</h5>
+        <p class="card-text text-gray" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quidem unde exercitationem perferendis temporibus adipisci repudiandae odit culpa?.</p>
+       <div> <a href="contact.php" class="sign-up" style="text-decoration: none; border: none; background-color: white;"><span style="color: black; padding-left: 0; font-weight: bold;  text-decoration: none;">Hire Now</span></a></div>
+     
+    </div>
+    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="card">
+        <div class="contain">
+      <img src="./images/card 7.jpg" class="card-img-top" alt="...">
+    </div>
+      <div class="card-body">
+        <h5 class="card-title text-light">Firewall Congiguration</h5>
+        <p class="card-text text-gray" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe nam magnam veniam, alias aperiam eveniet tempora id voluptatum.</p>
+        <a href="contact.php" class="sign-up" style="text-decoration: none; border: none; background-color: white;"><span style="color: black; padding-left: 0; font-weight: bold;  text-decoration: none;">Hire Now </span></a>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+<br>
+
+
+ <!-- <h1 class="hood" style="padding-top: 100px;"><p style="color: #237dbb; font-size: 17px;  font-family: 'Poppins', sans-serif;" class="dd">Your Vision, Our Expertise</p><p style="color: black;">At A Glance</p></h1> -->
+
+
+ <!-- <div class="section" >
+  <div class="wrappre">
+   
+  </div>
+  <div class="counter-up">
+    <div class="content">
+      <div class="box">
+        <div class="icon"><i class="fas fa-history"></i></div>
+        <div class="counter">724</div>
+        <div class="text">Working Hours</div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fas fa-gift"></i></div>
+        <div class="counter">508</div>
+        <div class="text">Completed Projects</div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fas fa-users"></i></div>
+        <div class="counter">436</div>
+        <div class="text">Happy Clients</div>
+      </div> -->
+      <!-- <div class="box">
+        <div class="icon"><i class="fas fa-award"></i></div>
+        <div class="counter">120</div>
+        <div class="text">Awards Received</div>
+      </div> -->
+    <!-- </div>
+  </div>
+  <script>
+  $(document).ready(function(){
+    $('.counter').counterUp({
+      delay: 10,
+      time: 1200
+    });
+  });
+  </script> -->
+
+
+
+
+
+
+<div class="about-container nine">
+            
+          
+
+    <div class="text-container" id="abouti">
+        <!-- <span style="color: #064d7d; font-size: 17px;font-family: 'Poppins', sans-serif" class="s">Your IT solution</span> -->
+        <h1 style="color: black;">About Us</h1>
+         <p style="color: rgb(0, 0, 0); " class="para" >At Tech Serve, we have a team of highly skilled IT professionals with years of experience and in-depth knowledge in providing top-notch IT services. Our expertise allows us to deliver reliable and innovative solutions tailored to your unique business needs.We stay up-to-date with the latest technological advancements. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, ab eaque minima alias dolore dignissimos officiis saepe neque, impedit nostrum iste illum eligendi optio quisquam corrupti? Pariatur ab iure error rem eos tempora dolorem dicta impedit totam, repellat architecto, voluptates ut? Tenetur illum nihil ipsa magnam impedit similique nulla expedita?</p> 
+        
+     </div>
+    <!-- <div class="image-container">
+        <img src="./images/card6.jpg" alt="">
+        
+    </div> -->
+</div>
+ 
+
+ <br class="brki"><br class="brki"><br class="brki">
+ <br class="brku"><br class="brku"><br class="brku"><br class="brku"><br class="brku">
+ <br class="brkun"><br class="brkun"><br class="brkun">
+ <br class="brkuni"><br class="brkuni"><br class="brkuni">
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<br class="break"><br class="break">
+
+<br class="breaki"><br class="breaki">
+
+<br class="breakii"><br class="breakii">
+
+<br class="breakiii"><br class="breakiii">
+
+<br class="breakiiii"><br class="breakiiii">
+<br class="breakiiiii"><br class="breakiiiii">
+<br class="breakiiiiii"><br class="breakiiiiii">
+
+<br class="end"><br class="end">
+ 
+<div class="kod">Get in Touch with us</div>
+
+<div class="mn">
+
+    <div class="left">
+    <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.333954405164!2d74.40991921500753!3d31.48750325591514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190f53fafc63ab%3A0x5f7c5a7b5dc45a17!2sBhatta%20Chowk%2C%20Nadirabad%2C%20Lahore%2C%20Punjab%2054770%2C%20Pakistan!5e0!3m2!1sen!2s!4v1655632794375!5m2!1sen!2s "
+    loading="lazy " referrerpolicy="no-referrer-when-downgrade ">
+</iframe>
+</div>
+
+<div class="right">
+
+    <div class="   col-md-12 pb-2" >
+        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="svga" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+            </svg>
+        <a class="ln">&nbsp;&nbsp;&nbsp;&nbsp;Main Market, N#1, Bhatta Chowk,<br> Lahore Cantt, Punjab Pakistan</a>
+    </div>
+    <div class="col-md-12 pb-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="svga" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+              </svg>
+        <a class="ln">&nbsp;&nbsp;&nbsp;&nbsp;+92-315-4683802</a>
+    </div>
+    <div class="col-md-12 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" class="svga" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+              </svg>
+        <a class="ln">&nbsp;&nbsp;&nbsp;&nbsp;asifdildar020@gmail.com</a>
+    </div>
+    <br>
+<button class="btnnn"><a href="contact.php" class="btnnna">Contact Us</a></button>
+</div>
+</div>
+
+<br><br>
+
+<footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Tech Serve.com <i> </i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium molestias cumque, aliquid dolore et accusamus modi voluptas alias adipisci similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, distinctio?</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="contact.php">Technical Services</a></li>
+            <li><a href="contact.php">Software Installation</a></li>
+            <li><a href="contact.php">Hardware Installation</a></li>
+            <li><a href="contact.php">Firewall Congiguration</a></li>
+            <li><a href="contact.php">Network Installation</a></li>
+            <!-- <li><a href="http://scanfcode.com/category/templates/">Templates</a></li> -->
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="contact.php">Contact Us</a></li>
+            <li><a href="#ss">Our Services</a></li>
+            <li><a href="./our team.html">Our Team</a></li>
+            <li><a href="#abouti">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+       <a href="#" class="web" style="color: #63befb; font-size: 18px; text-decoration: none;">HASSAN Webs</a>
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i><img src="./images/facebook.png" width="60px"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"><img src="./images/ina-removebg-preview.png" width="50px"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"><img src="./images/tww-removebg-preview.png" width="80%"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"><img src="./images/git-removebg-preview.png" width="80%"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
